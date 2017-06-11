@@ -38,7 +38,7 @@ html, body{
 }
 
 .field_box{
-	margin: 100px auto;
+	margin: 100px auto 0;
 	width: 1000px;
 	height: 700px;
 	border: 1px solid #f0f0f0;
@@ -98,13 +98,21 @@ html, body{
 	background: linear-gradient(to top, #2E9AEF, #6DB7F3);
 }
 
-@media (max-height:800) {
+@media(max-width:1000px) {
+    .info_box{
+        width: 600px;
+        margin-left: -300px;
+    }
 	.cell{
 		width: 15px;
 		height: 15px;
 	}
 	.field_box{
+        margin-top: 50px;
 		width: 750px;
 		height: 525px;
 	}
+    .info_box{
+        top: 0;
+    }
 }
