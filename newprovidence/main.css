@@ -1,4 +1,4 @@
-@font-face{
+/*@font-face{
     font-family: Lato-Light;
     src: url(lato/lato-Light.ttf);
 }
@@ -13,16 +13,17 @@
 @font-face{
     font-family: VarelaRound;
     src: url(VarelaRound/VarelaRound-Regular.ttf);
-}
+}*/
 
 *{
     margin: 0;
-    font-family: Lato-Regular;
+    font-family: Lato;
     line-height: 1.2em;
 }
 body{
     opacity: 0;
     transition: opacity 2s;
+    overflow-x: hidden;
 }
 a{
     text-decoration: none;
@@ -39,7 +40,9 @@ ul{
 .position{
     position: relative;
 }
-
+button:hover {
+    cursor: pointer;
+}
 
 /*BEGIN VIEW*/
 .view_wrapper{
@@ -982,6 +985,98 @@ footer{
     }
     .footer_info_box{
         width: 900px;
+    }
+}
+@media(max-width: 1200px) {
+    .header_info1_box{
+        margin-left: 10px;
+    }
+    .header_info_cell{
+        margin-left: 22px;
+    }
+    .header_info2_box{
+        margin-right: 10px;
+    }
+    .header_get_help{
+        margin-left: 22px;
+    }
+    .header_get_contacts{
+        margin-left: 22px;
+    }
+    .header_get_getapp{
+        margin-left: 20px;
+    }
+    
+    .feature_article_box{
+        width: 30%;
+    }
+    .feature_article_box:first-child{
+        margin-left: 2%;
+    }
+    .feature_article_box2{
+        margin: 0 0 0 100px;
+        
+    }
+    
+    .map_feature_wrapper{
+        background: url(imgs/map.png) 600px 50% no-repeat;
+    }
+    
+    .customers_userpics_box{
+        width: 300px;
+    }
+    .arrows{
+        width: 540px;
+        padding: 0;
+    }
+    .customers_userpics_box{
+        width: 338px;
+    }
+    
+    
+    .plan_choose_box{
+        top: 100px;
+        width: 48%;
+        height: 500px;
+        right: 10px;
+    }
+    
+    .plan_info_box{
+        top: 100px;
+        width: 40%;
+        left: 10px;
+    }
+    
+    .plan_choose_starter{
+        width: 51%;
+        height: 100%;
+        
+    }
+    .plan_choose_pro{
+        width: 49%;
+        height: 90%;
+    }
+    
+    .plan_choose_pro_get_started, .plan_choose_starter_get_started{
+        width: 110px;
+        margin-left: -55px;
+        padding: 12px 20px;
+    }
+    
+    .footer_info_box{
+        width: 600px;
+    }
+    .footer_article_list{
+        font-size: 11px;
+    }
+    
+    .footer_article_box{
+        margin-right: 20px;
+    }
+    
+    .footer_main_writers{
+        float: none;
+        margin-left: 100px;
     }
 }
 
