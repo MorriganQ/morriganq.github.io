@@ -1,0 +1,992 @@
+@font-face{
+    font-family: Lato-Light;
+    src: url(lato/lato-Light.ttf);
+}
+@font-face{
+    font-family: Lato-Regular;
+    src: url(lato/lato-regular.ttf);
+}
+@font-face{
+    font-family: Lato-Bold;
+    src: url(lato/lato-bold.ttf);
+}
+@font-face{
+    font-family: VarelaRound;
+    src: url(VarelaRound/VarelaRound-Regular.ttf);
+}
+
+*{
+    margin: 0;
+    font-family: Lato-Regular;
+    line-height: 1.2em;
+}
+body{
+    opacity: 0;
+    transition: opacity 2s;
+}
+a{
+    text-decoration: none;
+}
+input{
+    cursor: pointer;
+}
+input:focus{
+    outline: none;
+}
+ul{
+    list-style: none;
+}
+.position{
+    position: relative;
+}
+
+
+/*BEGIN VIEW*/
+.view_wrapper{
+    width: 100%;
+    height: 1000px;
+    background: url(imgs/view_bg.jpg) no-repeat 50% 0;
+    background-size: cover;
+    overflow: hidden;
+}
+
+/*BEGIN HEADER*/
+header{
+    position: fixed;
+    width: 100%;
+    height: 17px;
+    padding: 50px 0;
+    font-size: 16px;
+    z-index: 10;
+    transition: padding 0.5s, background-color 0.7s, box-shadow 0.5s;
+}
+.header_info1_box{
+    float: left;
+    margin-left: 300px;
+}
+.header_menu_out_side{
+    width: 16px;
+    height: 9.6px;
+    float: left;
+    margin-left: 10px;
+    background: url(imgs/menu_out_side.png);
+    background-size: cover;
+    cursor: pointer;
+}
+.header_info_cell{
+    float: left;
+    margin-left: 40px;
+}
+.header_info_cell1{
+    margin-left:20px;
+}
+.header_info_cell a{
+    color: #26272d;
+}
+.header_logo{
+    display: block;
+    width: 140px;
+    height: 13px;
+    position: absolute;
+    vertical-align: middle;
+    left: 50%;
+    margin-left: -70px;
+    background: url(imgs/logo.png);
+    cursor: pointer;
+}
+.header_info2_box{
+    float: right;
+    margin-right: 300px;
+}
+.header_get_box li{
+    float: left;
+    margin-left: 30px;
+    text-align: center;
+}
+.header_get_help a{
+    color: #9f9fa1;
+}
+.header_get_contacts a{
+    color: #26272d;
+}
+.header_get_getapp{
+    position: relative;
+    top: -10px;
+}
+.header_get_getapp,.out_menu_get_getapp{
+    display: block;
+    font-size: 16px;
+    width: 98px;
+    height: 42px;
+    float: left;
+    margin-left: 30px;
+    padding-left: 34px;
+    background: url(imgs/apple_logo.png) no-repeat 18px 40%,#267df4;
+    color: #fff;
+    border-radius: 21px;
+}
+.header_get_getapp .position,.out_menu_get_getapp .position{
+    top: 10px;
+    left: 11px;
+}
+
+.header_info_cell,.view_header_get_box li{
+    position: relative;
+    margin-top: -5px;
+}
+/*END HEADER*/
+
+.view_info_box{
+    position: relative;
+    top: 200px;
+    width: 785px;
+    height: 200px;
+    margin: 0 auto;
+    
+}
+.view_info_title{
+    position: relative;
+    top: 800px;
+    font-size: 45px;
+    font-weight: thin;
+    color: #26272d;
+    text-align: center;
+    transition: top 1s;
+}
+.view_info_descr{
+    font-size: 20px;
+    text-align: center;
+    margin-top: 800px;
+    color: #8c8f94;
+    transition: margin-top 1s;
+}
+.view_info_button_watchvideo{
+    font-size: 16px;
+    width: 98px;
+    margin: 700px auto 0;
+    padding: 17px 46px 17px 65px;
+    border: 1px solid #d9dcde;
+    border-radius: 25px;
+    background: url(imgs/play_icon.png) no-repeat 40px 50%,#eef0f2;
+    color: #323339;
+    cursor: pointer;
+    transition: margin-top 2s;
+}
+.view_info_iphone{
+    position: relative;
+    top: 500px;
+    left: 50%;
+    margin-left: -186.5px;
+    transition: top 1s;
+}
+/*END VIEW*/
+
+/*BEGIN FEATURE*/
+.feature_wrapper{
+    width: 100%;
+    height: 600px;
+    background-color: #fff;
+    border-bottom: 1px solid #f4f4f4;
+}
+.feature_box{
+    position: relative;
+    top: 400px;
+    width: 1120px;
+    height: 320px;
+    margin: 0 auto;
+    transition: top 1s;
+}
+.feature_article_box{
+    width: 500px;
+    height: 320px;
+    float: left;
+}
+.feature_article_title{
+    font-family: Lato-Light;
+    font-size: 26px;
+    margin-top: 45px;
+    color: #26272d;
+}
+.feature_article_descr{
+    font-size: 18px;
+    margin-top: 45px;
+    color: #8c8f94;
+}
+.feature_article_box2{
+    margin-left: 115px;
+}
+/*END FEATURE*/
+
+/*BEGIN iPhone FEATURE*/
+.iphone_feature_wrapper{
+    width: 100%;
+    height: 900px;
+    background: url(imgs/iphone_bg.png) no-repeat -200% 50%;
+    overflow: hidden;
+    transition: background 1s;
+}
+.iphone_feature_info_box{
+    position: relative;
+    top: 260px;
+    width: 470px;
+    height: 445px;
+    margin-right: 200px;
+    float: right;
+}
+.iphone_feature_info_title{
+    font-size: 42px;
+    color: #26272d;
+}
+.iphone_feature_info_descr{
+    font-size: 20px;
+    margin-top: 65px;
+    color: #8c8f94;
+}
+
+.iphone_feature_button{
+    position: relative;
+    top: 75px;
+    font-size: 16px;
+    border-radius: 21px;
+}
+.iphone_feature_button1{
+    padding: 13px 80px 13px 26px;
+    background: url(imgs/arrow_next.png) no-repeat 90% 50%,#267df4;
+    border: 1px solid #267df4;
+    color: #fff;
+}
+.iphone_feature_button2{
+    padding: 13px 30px;
+    background-color: #fff;
+    border: 1px solid #e9e9ea;
+    color: #26272d;
+}
+/*END iPhone FEATURE*/
+
+/*BEGIN MAP FEATURE*/
+.map_feature_wrapper{
+    width: 100%;
+    height: 900px;
+    background: url(imgs/map.png) no-repeat 110% 50%;
+}
+.map_feature_info_box{
+    position: relative;
+    top: 215px;
+    left: 215px;
+    width: 470px;
+    height: 470px;
+}
+.map_feature_info_title{
+    font-size: 42px;
+    color: #26272d;
+}
+.map_feature_info_descr{
+    font-size: 20px;
+    margin-top: 60px;
+    color: #8c8f94;
+}
+
+.map_feature_info_partners_title{
+    font-family: Lato-Bold;
+    font-size: 12px;
+    margin-top: 60px;
+    color: #26272d;
+}
+
+.map_feature_info_partners_dropbox{
+    width: 126px;
+    margin-top: 25px;
+}
+.map_feature_info_partners_evernote{
+    width: 140px;
+    margin: 25px 0 0 30px;
+}
+/*END MAP FEATURE*/
+
+/*BEGIN SCREENS*/
+.iphone_screens_wrapper{
+    width: 100%;
+    height: 1200px;
+    background-color: #f5f5f8;
+    overflow: hidden;
+}
+.iphone_screens_descr_box{
+    position: relative;
+    top: 140px;
+    left: 50%;
+    width: 364px;
+    height: 140px;
+    margin-left: -182px;
+}
+.iphone_screens_descr_title{
+    font-size: 42px;
+    padding-bottom: 50px;
+    background: url(imgs/linge_hr.jpg) no-repeat 50% 100%;
+    color: #26272d;
+}
+.iphone_screens_descr_title_image{
+    font-family: Lato-Bold;
+    font-size: 12px;
+    text-align: center;
+    margin-top: 44px;
+    color: #8c8f94;
+}
+
+.screens{
+    position: relative;
+    width: 1773px;
+    left: 50%;
+    margin-left: -886.5px;
+    top: 1273px;
+    height: 766px;
+    transition: top 2s;
+}
+.screen{
+    width: 320px;
+    height: 568px;
+}
+.screen1{
+    float: left;
+    background: url(imgs/screen1.jpg);
+    background-size: cover;
+}
+.screen2{
+    margin-left: 30px;
+    float: left;
+    background: url(imgs/screen2.jpg);
+    background-size: cover;
+}
+.screen3{
+    width: 373px;
+    height: 763px;
+    margin: -93px 0 0 30px;
+    float: left;
+    background: url(imgs/iphone-3_screen.png);
+}
+.screen4{
+    background: url(imgs/screen4.jpg);
+    background-size: cover;
+    margin-left: 30px;
+    float: left;
+}
+.screen5{
+    margin-left: 30px;
+    float: left;
+    background: url(imgs/screen5.jpg);
+    background-size: cover;
+}
+/**/
+
+.get_it_wrapper{
+    background-color: #f5f5f8;
+    height: 550px;
+}
+.get_it_box{
+    width: 512px;
+    height: 350px;
+    margin: 0 auto;
+}
+.get_it_company{
+    font-size: 12px;
+    text-align: center;
+    color: #9799a1;
+}
+.get_it_title{
+    font-size: 42px;
+    text-align: center;
+}
+.get_it_invite{
+    width: 100%;
+    height: 49px;
+    margin-top: 40px;
+    background-color: #f5f5f8;
+    border: 1px solid #cbcbce;
+    border-radius: 25px;
+}
+.get_it_invite_email{
+    position: relative;
+    top: 12px;
+    left: 24px;
+    font-size: 16px;
+    width: 300px;
+    border: none;
+    border-radius: 21px;
+    background-color: #f5f5f8;
+}
+.get_it_invite_send{
+    position: relative;
+    top: 3px;
+    right: 3px;
+    font-size: 16px;
+    padding: 12px 55px 12px 30px;
+    background: url(imgs/arrow_next.png) no-repeat 90% 50%;
+    border:none;
+    border-radius: 21px;
+    background-color: #6fc754;
+    color: #fff;
+    float: right;
+}
+.get_it_download_app_title{
+    font-size: 12px;
+    text-align: center;
+    margin-top: 65px;
+    color: #c3c4ca;
+}
+.get_it_download_app{
+    display: block;
+    width: 210px;
+    height: 60px;
+    margin: 20px auto;
+    background: url(imgs/download_app_store.png) no-repeat;
+}
+/*END SCREENS*/
+
+/*BEGIN CUSTOMERS*/
+.customers_wrapper{
+    width: 100%;
+    height: 750px;
+    background-color: #fff;
+}
+.customers_userpics_box{
+    position: relative;
+    top: 132px;
+    width: 638px;
+    height: 138px;
+    margin: 0 auto;
+}
+.customers_userpic{
+    position: relative;
+    top:  20px;
+    width: 92px;
+    height: 92px;
+    opacity: 0.2;
+    border-radius: 50%;
+    cursor: pointer;
+    transition: opacity 1s;
+}
+.customers_userpic1{
+    float: left;
+    background: url(imgs/userpic1.jpg);
+    background-size: cover;
+}
+.customers_userpic2{
+    position: relative;
+    left: 50%;
+    margin-left: -140px;
+    background: url(imgs/userpic2.jpg);
+    background-size: cover;
+    float: left;
+}
+.customers_userpic3{
+    float: right;
+    background: url(imgs/userpic3.jpg);
+    background-size: cover;
+}
+.arrows{
+    width: 1130px;
+    height: 42px;
+    margin: 35px auto;
+}
+.arrow{
+    width: 23px;
+    height: 42px;
+    background-size: cover;
+    cursor: pointer;
+}
+.arrow_left{
+    background: url(imgs/arrow_left.png) no-repeat;
+    float: left;
+}
+.arrow_right{
+    background: url(imgs/arrow_right.png) no-repeat;
+    float: right;
+}
+.customers_feedback_main_box{
+    width: 570px;
+    height: 300px;
+    margin: 95px auto;
+    overflow: hidden;
+}
+.customers_feedback_box{
+    width: 570px;
+    height: 300px;
+    transition: margin-top 1s,opacity 1.5s;
+}
+.customers_feedback_box2,.customers_feedback_box3{
+    margin-top:0;
+    opacity: 0;
+}
+.customers_feedback_title{
+    font-family: Lato-Light;
+    font-size: 32px;
+    text-align: center;
+    color: #26272d;
+}
+.customers_feedback_comment{
+    font-family: Lato-Light;
+    font-size: 20px;
+    text-align: center;
+    margin-top: 50px;
+}
+.customers_feedback_stars_box{
+    width: 154px;
+    height: 25px;
+    margin: 25px auto;
+    padding: 0;
+}
+.customers_feedback_stars_box .star{
+    width: 24px;
+    height: 23px;
+    float: left;
+    background: url(imgs/star_icon.png);
+    background-size: cover;
+    margin-left: 8px;
+}
+.customers_feedback_stars_box .star1{
+    margin-left:0;
+}
+.customers_feedback_comment_writer{
+    text-align: center;
+    font-family: Lato-Bold;
+    font-size: 12px;
+    margin-top: 60px;
+}
+/*END CUSTOMERS*/
+
+/*BEGIN PLAN*/
+
+.plan_wrapper{
+    width: 100%;
+    height: 900px;
+    background-color: #ededee;
+    
+}
+.plan_info_box{
+    position: relative;
+    top: 215px;
+    left: 215px;
+    height: 215px;
+    width: 360px;
+    height: 460px;
+    float: left;
+}
+.plan_info_title{
+    font-size: 42px;
+    color: #26272d;
+}
+.plan_info_type_title{
+    color: #26272d;
+    font-size: 12px;
+    margin-top: 65px;
+}
+.plan_info_type{
+    width: 260px;
+    height: 49px;
+    margin-top: 20px;
+    border: 1px solid #d0d1d2;
+    border-radius: 25px;
+}
+.plan_info_type_individual{
+    font-size: 16px;
+    margin: 5px 0 0 5px;
+    padding: 10px 28px;
+    color: #26292c;
+    border:none;
+    border-radius: 21px;
+    background-color: #fff;
+    box-shadow: 10px 10px 40px #cdcdcf;
+}
+.plan_info_type_company{
+    font-size: 16px;
+    float: right;
+    margin: 5px 5px 0 0;
+    padding: 10px 28px;
+    color: #a0a2a3;
+    border:none;
+    border-radius: 21px;
+    background-color: #ededee;
+}
+.plan_info_descr{
+    font-size: 20px;
+    margin-top: 80px;
+    color: #8c8f94;
+}
+.plan_info_bigger_team{
+    font-size: 14px;
+}
+.plan_info_bigger_team{
+    margin-top: 50px;
+}
+.plan_info_bigger_team a{
+    color: #267df4;
+}
+
+.plan_choose_box{
+    position: relative;
+    top: 215px;
+    right: 100px;
+    width: 670px;
+    height: 550px;
+    float: right;
+}
+
+.plan_choose_starter{
+    width: 340px;
+    height: 549px;
+    border-top: 1px solid #fff;
+    background: #fff;
+    float: left;
+    border-radius: 10px;
+    box-shadow: 0 0 20px #eaeaec;
+}
+.plan_choose_starter_name{
+    font-family: Lato-Light;
+    font-size: 32px;
+    margin-top: 55px;
+    text-align: center;
+}
+.plan_choose_starter_price,.plan_choose_pro_price{
+    font-family: Lato-Bold;
+    font-size: 11px;
+    width: 25px;
+    margin: 25px auto;
+    padding: 8px 14px;
+    border: 1px solid #d4d4d5;
+    border-radius: 24px;
+    color: #26272d;
+    
+}
+.plan_choose_starter_descr,.plan_choose_pro_descr{
+    font-size: 20px;
+    text-align: center;
+    width: 170px;
+    margin: 30px auto;
+    color: #8c8f94;
+}
+.plan_choose_starter_features,.plan_choose_pro_features{
+    font-size: 16px;
+    text-align: center;
+    list-style-position: inside;
+    list-style-image: url(imgs/checkbox.png);
+    color: #26292c;
+}
+.plan_choose_starter_features li,.plan_choose_pro_features li{
+    margin-left: -40px;
+}
+.plan_choose_starter_get_started,.plan_choose_pro_get_started{
+    position: relative;
+    left: 50%;
+    font-size: 16px;
+    width: 210px;
+    margin: 90px 0 0 -105px;
+    padding: 13px 65px;
+    background-color: #267df4;
+    border: none;
+    border-radius: 21px;
+    color: #fff;
+}
+
+
+.plan_choose_pro{
+    width: 330px;
+    height: 510px;
+    margin-top: 20px;
+    background-color: #d9d9dc;
+    border-radius: 0 10px 10px 0;
+    float: left; 
+}
+.plan_choose_pro_name{
+    font-family: Lato-Light;
+    font-size: 32px;
+    margin-top: 35px;
+    text-align: center;
+}
+/*END PLAN*/
+
+/*BEGIN SUBSCRIBE*/
+.subscribe_waller{
+    width: 100%;
+    height: 349px;
+    border-bottom: 1px solid #f4f4f4;
+}
+.subscribe_box{
+    position: relative;
+    top: 90px;
+    width: 570px;
+    height: 180px;
+    margin: 0 auto;
+}
+.subsribe_title{
+    font-size: 42px;
+    text-align: center;
+    color: #26292c;
+}
+.subscribe_get_form{
+    font-size: 16px;
+    width: 100%;
+    height: 49px;
+    margin-top: 45px;
+    border: 1px solid #d4d4d5;
+    border-radius: 30px;
+}
+.subscribe_get_email{
+    position: relative;
+    top: 13px;
+    left: 20px;
+    width: 300px;
+    color: #67696b;
+    border: none;
+}
+.subscribe_get_send{
+    position: relative;
+    top: 5px;
+    right: 5px;
+    float: right;
+    padding: 12px 30px;
+    border: none;
+    border-radius: 21px;
+    background-color: #6fc754;
+    color: #fff;
+}
+.subscribe_promise{
+    font-size: 14px;
+    width: 200px;
+    margin:  70px auto;
+    color: #8c8f94;
+}
+/*END SUBSRIBE*/
+footer{
+    width: 100%;
+}
+.footer_info_box{
+    position: relative;
+    top: 85px;
+    width: 1100px;
+    height: 250px;
+    margin: 0 auto;
+}
+
+.footer_info_about{
+    width: 250px;
+    float: left;
+}
+.footer_info_about_title{
+    color: #26272d;
+    font-size: 14px;
+}
+.footer_info_about_descr{
+    font-size: 14px;
+    margin-top: 30px;
+    color: #8c8f94;
+}
+.footer_info_about_app_store{
+    display: block;
+    width: 140px;
+    height: 42px;
+    margin-top: 30px;
+    background: url(imgs/download_app_store_v2.png);
+    background-size: cover;
+}
+
+.social_box{
+    width: 255px;
+    margin-top: 35px;
+}
+.social_box .social{
+    display: inline-block;
+    width: 16px;
+    height: 14px;
+    background-size: cover;
+    margin-left: 30px;
+ }
+.social_box .social_twitter{
+    margin-left:0;
+    background: url(imgs/twitter.png);
+}
+.social_box .social_facebook{
+    width: 10px;
+    height: 16px;
+    background: url(imgs/facebook.png);
+}
+.social_box .social_googleplus{
+    height: 15px;
+    background: url(imgs/google.png);
+}
+.social_box .social_t{
+        width: 10px;
+    height: 16px;
+    background: url(imgs/tumbler.png);
+}
+.social_box .social_p{
+    width: 14px;
+    height: 16px;
+    background: url(imgs/Pinterest.png);
+}
+.social_box .social_in{
+    height: 15px;
+    background: url(imgs/LinkedIn.png);
+}
+
+.footer_article_title{
+    font-size: 12px;
+    color: #26272d;
+}
+.footer_article_list{
+    font-size: 16px;
+    list-style: none;
+    padding: 0;
+}
+.footer_article_box{
+    float: right;
+    margin-right: 100px;
+}
+.footer_article_box3{
+    margin-right: 0;
+}
+.footer_article_list li{
+    margin-top: 20px;
+}
+.footer_article_list a{
+        color: #8c8f94;
+}
+
+
+.footer_main{
+    position: relative;
+    top: 200px;
+    width: 1170px;
+    margin: 0 auto;
+    border-top: 1px solid #f4f4f4;
+}
+.footer_main_writers{
+    font-size: 9px;
+    color: #26272d;
+    padding: 30px 0;
+    float: right;
+}
+.footer_main_writers span{
+    position: relative;
+    top: -12px;
+}
+.footer_main_writers img{
+    margin: 0 30px;
+}
+
+
+.out_menu_wrapper{
+    position: fixed;
+    top:0;
+    left:-380px;
+    width: 380px;
+    height: 100%;
+    background-color: #26272d;
+    z-index:11;
+    transition: left 1s cubic-bezier(0.545, 0, 0.05, 1);
+}
+.out_menu_info_box{
+    width: 150px;
+    float: left;
+}
+.out_menu_info_logo{
+    margin: 50px 0 0 40px;
+}
+.out_menu_info_list_box{
+    line-height: 1;
+    margin-top: 45px;
+}
+.out_menu_info_list_box li{
+    margin-top: 20px;
+}
+.out_menu_info_list_box li a{
+    color: #fff;
+}
+.out_menu_info_list_box li a:hover{
+    color: #266fc2;
+}
+.out_menu_get_getapp{
+    margin: 40px 40px;
+    clear: both;
+}
+.out_menu_close{
+    width: 15px;
+    height: 15px;
+    margin: 45px 20px;
+    float: right;
+    background: url(imgs/out_menu_close.png);
+    cursor: pointer;
+}
+
+.out_menu_footer_info_box{
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    margin: 0 auto;
+    padding: 20px 0 20px 40px;
+}
+.out_menu_footer_info_made_by{
+    font-size: 12px;
+    color: #fff;
+    margin-top: 10px;
+}
+.out_menu_writers{
+    color: #267df4;
+}
+
+
+@media(max-width: 1400px){
+    
+    .header_info1_box{
+        margin-left: 150px;
+    }
+    .header_info2_box{
+        margin-right: 150px;
+    }
+    
+    .iphone_feature_wrapper{
+        background: url(imgs/iphone_bg.png) no-repeat -400% 50%;
+    }
+    .iphone_feature_info_box{
+        margin-right: 50px;
+    }
+    
+    .map_feature_wrapper{
+        background: url(imgs/map.png) no-repeat 190% 50%
+    }
+    .map_feature_info_box{
+        left: 50px;
+    }
+    
+    .plan_info_box{
+        left: 100px;
+    }
+    .plan_choose_box{
+        right: 50px;
+    }
+}
+
+@media(max-width: 1250px){
+    
+    .header_info1_box{
+        margin-left: 100px;
+    }
+    .header_info2_box{
+        margin-right: 100px;
+    }
+    
+    .map_feature_wrapper{
+        background: url(imgs/map.png) no-repeat 270% 50%;
+    }
+    
+    .plan_choose_box{
+        right: 50px;
+    }
+    .footer_info_box{
+        width: 900px;
+    }
+}
+
+@media(max-width: 320px){
+    *{
+        font-size: 2em;
+    }
+}
