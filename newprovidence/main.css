@@ -205,7 +205,7 @@ header{
     float: left;
 }
 .feature_article_title{
-    font-family: Lato-Light;
+    font-family: Lato;
     font-size: 26px;
     margin-top: 45px;
     color: #26272d;
@@ -290,7 +290,7 @@ header{
 }
 
 .map_feature_info_partners_title{
-    font-family: Lato-Bold;
+    font-family: Lato;
     font-size: 12px;
     margin-top: 60px;
     color: #26272d;
@@ -328,7 +328,7 @@ header{
     color: #26272d;
 }
 .iphone_screens_descr_title_image{
-    font-family: Lato-Bold;
+    font-family: Lato;
     font-size: 12px;
     text-align: center;
     margin-top: 44px;
@@ -520,13 +520,13 @@ header{
     opacity: 0;
 }
 .customers_feedback_title{
-    font-family: Lato-Light;
+    font-family: Lato;
     font-size: 32px;
     text-align: center;
     color: #26272d;
 }
 .customers_feedback_comment{
-    font-family: Lato-Light;
+    font-family: Lato;
     font-size: 20px;
     text-align: center;
     margin-top: 50px;
@@ -550,7 +550,7 @@ header{
 }
 .customers_feedback_comment_writer{
     text-align: center;
-    font-family: Lato-Bold;
+    font-family: Lato;
     font-size: 12px;
     margin-top: 60px;
 }
@@ -643,13 +643,13 @@ header{
     box-shadow: 0 0 20px #eaeaec;
 }
 .plan_choose_starter_name{
-    font-family: Lato-Light;
+    font-family: Lato;
     font-size: 32px;
     margin-top: 55px;
     text-align: center;
 }
 .plan_choose_starter_price,.plan_choose_pro_price{
-    font-family: Lato-Bold;
+    font-family: Lato;
     font-size: 11px;
     width: 25px;
     margin: 25px auto;
@@ -967,26 +967,6 @@ footer{
     }
 }
 
-@media(max-width: 1250px){
-    
-    .header_info1_box{
-        margin-left: 100px;
-    }
-    .header_info2_box{
-        margin-right: 100px;
-    }
-    
-    .map_feature_wrapper{
-        background: url(imgs/map.png) no-repeat 270% 50%;
-    }
-    
-    .plan_choose_box{
-        right: 50px;
-    }
-    .footer_info_box{
-        width: 900px;
-    }
-}
 @media(max-width: 1200px) {
     .header_info1_box{
         margin-left: 10px;
@@ -1077,6 +1057,40 @@ footer{
     .footer_main_writers{
         float: none;
         margin-left: 100px;
+    }
+}
+@media(max-width: 820px) {
+    .header_logo{
+        width: 92px;
+        height: 8px;
+        margin-left: -46px;
+        margin-top: 2px;
+        background-size: cover;
+    }
+    header{
+        font-size: 12px;
+    }
+    .header_info_cell{
+        margin-top: -1px;
+    }
+    .header_get_getapp{
+        width: 48px;
+        height: 32px;
+        font-size: 13px;
+        background: url(imgs/apple_logo.png) no-repeat 4px 40%,#267df4;
+        background-size: 14px;
+    }
+    .header_get_getapp span{
+        margin-left: -20px;
+    }
+    
+    
+    .view_info_box{
+        width: 500px;
+    }
+    
+    .plan_choose_starter_descr, .plan_choose_pro_descr{
+        font-size: 16px;
     }
 }
 
