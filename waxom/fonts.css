@@ -1,0 +1,59 @@
+@font-face{
+    font-family: Montserrat-UltraLight;
+    src: url(Montserrat/Montserrat-UltraLight.otf);
+}
+@font-face{
+    font-family: Montserrat-Regular;
+    src: url(Montserrat/Montserrat-Regular.ttf);
+}
+@font-face{
+    font-family: Montserrat-Bold;
+    src: url(Montserrat/Montserrat-Bold.ttf);
+}
+
+@font-face{
+    font-family: Raleway-Regular;
+    src: url(Raleway/Raleway-Regular.ttf);
+}
+@font-face{
+    font-family: Raleway-Medium;
+    src: url(Raleway/Raleway-Medium.ttf);
+}
+@font-face{
+    font-family: Raleway-Bold;
+    src: url(Raleway/Raleway-Bold.ttf);
+}
+@font-face{
+    font-family: Raleway-ExtraBold;
+    src: url(Raleway/Raleway-ExtraBold.ttf);
+}
+@font-face{
+    font-family: Raleway-SemiBold;
+    src: url(Raleway/Raleway-SemiBold.ttf);
+}
+
+.montserrat-ultralight{
+    font-family: Montserrat-UltraLight;
+}
+.montserrat-regular{
+    font-family: Montserrat-Regular;
+}
+.montserrat-bold{
+    font-family: Montserrat-Bold;
+}
+
+.raleway-regular{
+    font-family: Raleway-Regular;
+}
+.raleway-medium{
+    font-family: Raleway-Medium;
+}
+.raleway-bold{
+    font-family: Raleway-Bold;
+}
+.raleway-extrabold{
+    font-family: Raleway-ExtraBold;
+}
+.raleway-semibold{
+    font-family: Raleway-SemiBold;
+}
