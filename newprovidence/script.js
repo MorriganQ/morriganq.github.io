@@ -46,14 +46,14 @@ function mainScroll(){
     
     if(pageYOffset>1000){
         if(window.innerWidth>1500){
-            iphone_feature_wrapper.style.background = "url(imgs/iphone_bg.png) no-repeat -110px 50%";
+            iphone_feature_wrapper.style.background = "url(imgs/iphone_bg.png) no-repeat -410px 50%";
         }
         else{
             if(window.innerWidth>1300){
-                iphone_feature_wrapper.style.background = "url(imgs/iphone_bg.png) no-repeat -190px 50%";
+                iphone_feature_wrapper.style.background = "url(imgs/iphone_bg.png) no-repeat -490px 50%";
             }
             else{
-                iphone_feature_wrapper.style.background = "url(imgs/iphone_bg.png) no-repeat -290px 50% ";
+                iphone_feature_wrapper.style.background = "url(imgs/iphone_bg.png) no-repeat -590px 50% ";
             }
         };
     }
